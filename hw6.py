@@ -23,9 +23,10 @@ def security_is(password):
         return False
 
 
-def nearest_num(lst, num = 0):
-        if not lst:
-            return None
-        return min(lst, key=lambda x: abs(x - num))
+def nearest_num(lst, num=0):
+    if not lst:
+        return None
+    return min(lst, key=lambda x: abs(x - num))
+
 
 print(nearest_num([3, 5, 6, 1]))
